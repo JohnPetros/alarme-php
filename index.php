@@ -36,7 +36,7 @@ if (isset($_COOKIE["alarm-week-days"])) {
       </div>
       <span class="colons">:</span>
       <div class="timer-container">
-        <input type="number" class="timer" name="minutes" min="0" max="59" value="<?php echo isset($minutes) ? $minutes : "08" ?>" require />
+        <input type="number" class="timer" name="minutes" min="0" max="59" value="<?php echo isset($minutes) ? $minutes : "00" ?>" require />
         <small class="timer-unit">Minutos</small>
       </div>
     </div>
