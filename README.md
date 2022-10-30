@@ -16,7 +16,7 @@
 </p>
 
 <h3 align="center"> 
-🚧  Em aprimoramento  🚧
+🚧  Em desenvolvimento  🚧
 </h3>
 
 ## 💻 Projeto
