@@ -19,9 +19,8 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="src/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="src/css/style.css?<?php echo time()?>" />
-    <script defer src="src/js/setAlarm.js"></script>
+    <script defer src="src/js/setAlarm.js?<?php echo time()?>"></script>
     <title>Alarme</title>
   </head>
   <body>
@@ -37,7 +36,7 @@
         </div>
         <span class="colons">:</span>
         <div class="timer-container">
-          <input type="number" class="timer" name="minutes" min="0" max="59" value="<?php  echo isset($minutes) ? $minutes : "00" ?>" require />
+          <input type="number" class="timer" name="minutes" min="0" max="59" value="<?php  echo isset($minutes) ? $minutes : "08" ?>" require />
           <small class="timer-unit">Minutos</small>
         </div>
       </div>

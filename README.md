@@ -25,7 +25,7 @@ Sistema de alarme personalizável em PHP e JS, desenvolvido como tarefa para mat
 
 ## ✅ Demonstração
 
-![Vite + React - Google Chrome 10_10_2022 09_55_43](https://user-images.githubusercontent.com/93893533/194871288-ea8b1fab-ba31-4533-b427-6a43f7293446.png)
+![Alarme - Google Chrome 26_10_2022 16_59_00](https://user-images.githubusercontent.com/93893533/198882645-a6a7dd82-32e2-4d2a-8c7f-6195e34add70.png)
 
 <hr>
 
