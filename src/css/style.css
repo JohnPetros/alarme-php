@@ -1,0 +1,199 @@
+:root {
+  --blue: #00fffc;
+  --dark-blue: #05657d;
+  --red: rgb(242, 70, 70);
+  --yellow: rgb(240, 240, 42);
+  --white: #f1f1f1;
+  --black: #111;
+
+  --loader: 1260;
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(-45deg, #000, #444);
+  color: var(--white);
+}
+
+header {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  border-bottom: var(--blue) solid 2px;
+  font-size: 2rem;
+}
+
+.container {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-container {
+  display: inline-block;
+  position: relative;
+}
+
+.timer {
+  width: 20rem;
+  height: 20rem;
+  background: transparent;
+  border-top: var(--blue) solid 4px;
+  border-bottom: var(--blue) solid 4px;
+
+  font-size: 8rem;
+  color: var(--white);
+  padding-left: 4rem;
+}
+
+.colons {
+  font-size: 8rem;
+  margin: 0 2rem;
+}
+
+.timer-unit {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 5.5rem;
+  font-size: 2rem;
+}
+
+#checked-weekdays-name-container {
+  font-weight: 400;
+  text-align: center;
+  margin: 5rem 0;
+  font-size: 3rem;
+}
+
+.week-day {
+  margin: 0 1rem;
+  border-radius: 50%;
+  color: var(--blue);
+  background-color: var(--dark-blue);
+  padding: 2.4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.week-day.checked {
+  background-color: var(--blue);
+  color: var(--black);
+}
+
+.week-day input {
+  display: none;
+}
+
+.button {
+  color: var(--blue);
+  background-color: var(--dark-blue);
+  padding: 1rem 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 8rem;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background: var(--blue);
+  color: var(--black);
+}
+
+.alarm-clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50rem;
+  height: 50rem;
+}
+
+.alarm-clock svg {
+  width: 100%;
+  height: 85%;
+  position: relative;
+}
+
+.alarm-clock svg circle {
+  fill: none;
+  stroke: black;
+  stroke-width: 10;
+  stroke-dasharray: var(--loader);
+  stroke-dashoffset: var(--loader);
+  transform: translate(10%, 5%);
+}
+
+.alarm-clock svg circle#alarm-loader {
+  stroke-dashoffset: 0;
+  stroke: var(--dark-blue);
+}
+
+.alarm-clock svg circle#alarm-loader-grow {
+  stroke-dashoffset: calc(var(--loader) - (var(--loader) * 0.01));
+  stroke: var(--blue);
+  transition: stroke-dashoffset 0.8s;
+}
+
+.alarm-clock .alarm-countdown {
+  position: absolute;
+  display: none;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 4rem;
+  color: var(--blue);
+}
+
+.alarm-clock .loading {
+  position: absolute;
+  color: var(--blue);
+  font-size: 4rem;
+}
+
+.alarm-clock .alarm-countdown .time.hidden {
+  display: none;
+}
+
+.alarm-clock .alarm-countdown .button {
+  display: none;
+  position: absolute;
+}
+
+.alarm-time {
+  display: flex;
+  gap: 2.2rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+}
+
+.alarm-time i {
+  color: var(--blue);
+  font-size: 3rem;
+}
+
+.alarm-time > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.alarm-time .button {
+  margin-top: 0;
+  font-size: 2rem;
+}
